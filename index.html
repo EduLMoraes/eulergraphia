@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EulerGraphia</title>
+    <link rel="stylesheet" href="./style/clear.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/open.js"></script>
+    <script src="./script/next.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">
+            <h1>EulerGrafia</h1>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <div class="home">
+            <a href="#">inicio</a>
+        </div>
+        <div class="simulate">
+            <a href="#">simulador</a>
+        </div>
+        <div class="chalanger">
+            <a href="#">exercícios</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="navigation-initial" id="navigation">
+            <div class="options">
+                <button id="option1" onclick="introduction()" class="option-selected">Introdução</button>
+                <button id="option2" onclick="bio()" class="option">Leonard Euler</button>
+                <button id="option3" onclick="path()" class="option">Caminhos Euler</button>
+                <button id="option4" onclick="formulas()" class="option">Fórmulas</button>
+                <button id="option5" onclick="fontes()" class="option">Fontes</button>
+            </div>
+            <div class="open">
+                <button id="simbol" onclick="open_navigation()">>></button>
+            </div>
+        </div>
+        <div class="writer-open" id="writer">
+            <div id="writer" style="height: 70vh;">
+                <iframe id="iframe" width="100%" height="100%" scrolling="yes" src="./views/introducao.html"> </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="root">
+        <p>desenvolvedor:</p> <br>
+        <p>Eduardo L. Moraes</p>
+    </div>
+</body>
+</html>
