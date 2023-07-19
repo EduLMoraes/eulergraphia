@@ -3,13 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/clear.css">
     <link rel="stylesheet" href="../style/style.css">
+
 </head>
 <body>
     <div class="words">
-        <h1 style="text-align: center;">Ainda em construção!!!</h1>
-        <img style="margin-left:20%" width="60%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABMlBMVEX19fUAAAD/3l3////39/fy8vL/314AAAL/3V7s7Oz8/Pzv7+/p6en/4V8AAAQEBAQMDAz/8mf/5GD/62P/6mP/9Wj+32L/72dSUlL/9mkRERE1NTVmZmb/52Ozs7Pe3t55eXnKysoYGBgqKiq8vLw9PT3S0tKKiopaWlpxcXGtra2GhoakpKQtLS2VlZV1dXXc0lmjnkW8tU4iIiKWlUHHwVLu5GHi2V6wqko7ORhRUCQ5OTl4djLz1FlWVlZ2cTJJPxqfnEWIgzkdGw7UxFPAu1MtJRN5cjcwLRZgXSmCgTorKxZkYyzNyFVNQBkrLBN3bCyIeTTt21wtJAs+MxZGRx2zokYYAgBkWSnW0leUiDsdGBBEQiTp5mVcWCt8cC/QvVSvl0BXSR8pJhpoVSIUFwXk++aMAAAehUlEQVR4nO09C3vTxrJZWV7JD1mWZVs41KW8W0qpbWzZSZPmzUlCcglp6QECKYdz+///wp1ZPfchRwmOLnxfhpSGRJZ2dmbnPaOlpRu4gRu4gRu4gRu4gRu4gRu4gRuYAzr8KfR5AEU/sFgU9Uq9XOjzyvVKsVtaWaoV+ER4UkWvlwtEUdcr5VqtVuADa0v1ar3ALa3Ua/Wl4h4ILFqr65XidlSv6LVauaLrpRCq1ysFdGBR4JnimBR2tFypVUv1u89+uHX7l9u///z0jl66vsfrcCDqemEco5fLtXq5Xqo9fUhS8PznO9eDo75UA+RwSwvCELjxTrlS1R8TCb6rXwuOOqNfrTjVhEKtdPeejKBNyNPSdTywUq4UKNSW9Hq9Xnom4xfAk8WjWK7Xy+X6wm+bCcAteumnLAQJeVRdsMADBkVNX6AULddK32XiZ5N7i14LYlj5Mh7N/2EQMvVKRf89m4Iobi6SNpdYrA4sWmFfBWEILFrRS7dQpMyBi47iZRbLCAin8Ms4/xI0hGeVfib2fAzJBRt+mcWCptf18lJRpxDMwsrSg/nYITxcmFYEw6JSpP+Cdmht+WIMybOFqAyd6cBykT4onHcQoxewKINH1QWY4YBhDQ7hl93ish+ofZ8DPYDbVeW9L/tAdNEKDpTU8hAQ4bGCT6+wViRhoShKqt6APwiAuGE0eD6VVnaVpeqFRoKWqrIcTbBqNIz0L56r+fTrBr2qYMfz8eR4MBkdvhB/8UOp4ODmlwIYbJy9zfjT3vKcvmVRq9XuTf8F/06TEeTpNwbVu2kS2cCfa36bmloI1Ds2OE2ycBP8ukFf4nxeoNbMAfxojCHtTyU+/ZZAL/3AUahB9jzN1GISIvQnAeoR3P2W+FRHHuWU4czTRDA7GyStMp5/U3xafc5juNYxJQwtzU+f1G+LT4FHucXveCaVMAQ+nRFOK34rfKovVR9xMsQgkxZVYag5q9yF974ZvV+6n2JRoNKGI/NowKjTtKyxvxk+5YOHBmn4lhpBTXO3eIH0beh9/Q7Heg0ya2fgRzXT2+eOYmH26RclpEtcfoKQVSeLgho1W8dI5gTJnwvhU71WqVSujGPpKY8gmWbyKBM2oBR5+7QAD6hcq2CO+Eqf1fW6gODYnYegBkoxhaBNfimCT2vlsl67UjwAPlP6kT+EO56mVBTxUeSUoq329xcOlVqlXLsam5a40Aw48nstax6GcBSdFZ7oBchTPIdXDOnoZYFHDxxz7jEEJ4MJmxQVb19jdjhe59XFTDo0YwDP+VSjGeo+AtM5TEtTjJ9+vaaN4PYaZOsCMROA32xwev/OV4uhEJqxyb7TnXsIAxrS/oi3wH/7ao230s8chg1ynGFxi+DxFvj1ZL8XAOhScNy2Ibu9arCEiMZF+aj/L6je5hE0fO1CMRMA9d7z7H3r6yOiLroUIGZm/Zwk1EytY3ARDcanXxcdwe3lXQqDrHS0XARELtVae7yw+fr4VEeXgk/ETK18Yga5lGrOeVop2uT3ry4ILrkUh1mOfQaSHwUx9f1XdhQll+LMvxSCGnXHvGVDCs4FXgS8SwErHfXzsmgAFvVe8nv0HU/EgnOfwvPKUiYNHPvLYUjN/kQQNg9iV7HoIng5nazrRBQzVBQztDvfggNhc5S+A9wvxrBcL7BQDYtVKktlviSg9GsaQ/huLPu9XavbnXM0KdgG4O5zRzEILgKa9WqhGXosO6ro6SiHlEnbcQQKmpoJ+HXnKkhK3SGfUwyD4PDASnEVv6ycEmt+0z+p3ufETINMWgIqwKIIF2Bo9jhhY7Pgog4sWqkUVQmks4LYWo0veSiJ9b8HUvywq81l0QisY+FOj0tAQB1bUS6P4FWKOWBD9VqtAjimfyyYawDpGLfJqNNFFC/GUBA2AI+QhFdj0asVc2BhY50vbtTFCLAYP2Ts2RUlqZKiJvWFe93GOvirRY2uxNZ6nR157rO8uWbY5AVnrpkmYEe7vBdFMQBlWVQTk26myyfcbPJML7AKSGdtIWX+zOsVftNRzPDxwy4TMxwiVmc6mc0mviNIJNOUYoukyP4sLKcsCwguSRWyGw7SLSEX8id80Zh6cNomb4JrV48F04dqrWPOPLUXWJx5MYJLNV1qB6tKxXk+z3jUAlWYMCN80/p4nlx95IlRAG+NGJIzXAyCtSW5SFyKAJMhn0ozGQVjHjXB/HzXZJFUdmoN8kHQLBSFDc8VBSl7MGTqtYrYqgHmGr+afc5co2DHMC6Nf2C2pkkFn4Ff267AqO2ZcM8fi8m4lbGPQWyS5M01XO9xK71aIB5FezRGwaTeCu9BGMQT1Ah1VngfI+VkXCOCNdD0TONzP9Xv80vhM/bIniAduXNmgYvE2Z4GGbUEK916l74l0vP6zW4sTa3XxHSUzkeAcd2emZjcwKKmZMiAHBFpuC0lwZ0NgU+/u3Y+rcHpq0mKVygqAQE4a6eogdiJLqGs7lCcCggCKxM+tnj9lTZ6vaboBiv9xm01xg/TJGP+kqALBO+Bwf94oiNitkXL5l71ur18cJlkBIXomkEGfKqQysa22XklYUhEDJFP36QvKKQiTJea6aXoGlkT4oeUyhgKVVABhhKCGhXdKHAyrh1FkU3AXBNALAxS1bK52zKGimoUEyUSB/cLT5uWBHPNzhc/bE34QEXDIGcKLrWoZwuRt8V01uQGHc01m0PwjRibUQE1vVc8ijZZc+XPsRINXpwWnRmW+0JBzOSgIcUUDL90VUURJjI4YVN4xk0010DM5MuGgk12lBARq6FmGal+sGwafJj/SYEZNyG6huDNLypJULT8tDh9dZy1M6azJiQySHG+sF56zOt6zIZmsKicBLacOOG7MXEsS4qORx90+D20L+6oXRyGd8Rnv+ll0oxqpujHe/5oa7w1GjgYxTADv1/GUAPLRoAinAyGIJhrAryjmUxq9t2WEIay+l6v1/MGCH6nbSnjboC3IGwACjqHsrl26NGM8KBpecOTUVqYtJzTydbrzZ2ou/RsbepqCkYFDK2B4IiQX4uQp7oYXTPIsroUHzHUvH24JInyU28kEYZsqVNxwM6HYg+qoo1v8VD6kX9sA6wZNX4Y/xxjL/eBE2GAdqnQmQe6Y6zMiIOv6Tc5/GxyvwAM5bbCMBuqOokoD0HSvgoaSqjZeyMk0EjAh6AU5ewiZZaNALHxdm3ulF5uig9Fo4TS9a5CYpgeu2IlpBEGmQzx40CaJjluK3WG6XwQL74TOMN6TXbJL4NG9gZJ0TUMlsFS1te76zIVQwzfBBiC724o5g80m80GOVaaNiYfswkixGyF9XL5Cxq3xYhTCmRzbccBeWKtrwMVVd4Su+aEGS5mfyjTj2Foo2viUVleUeptixY4ixCXkYRXt3GyMZTMNYPs9YE+FpJwXSEu2uyq1wGGrsRyEYZIxZkrMypFuosQTBaofcn8t+w5XPIsndUOihkLA78qGvbZReMgnOaI5IgxtJt2Q9XBh52YkrD5vcSif7UvGy+QgbqUDCXTcCVAQgWC9JRdNGyxpMtESUKUNIH0mnmmQliBZSOIpwfIp4DgwqWpviSba9vxvlNLUWkZYjhqsSN1RBSCNAEQN32F6m8NRI+SlaFch7Yog7nGF5CSF06SnlcpbSvAcNcKGyqVQxZ2/ghJiYkrhfnmbPM7Y5OfrqmsTzTX4FF7F5SQomUJMIB1Kw5UtE8fNyPU4VRLt9AsX1LB1xMh1uWBTweZBmm0/wGGU8RQFUgMMDx1DqJv91riLSyWjRLgeow30VwzmDUzH8Uw7olZUyrWcif3GbWc83AU0YokT7FhA4SNcIIfL94ZBg3CT5Uz7EgJzOPSSYxheysDQxC1feoEfYhAT5VEtgRhY19L5I3vXkaQarskMAMMm746JxPRcM2jYbU++CktVfG7IwaIF5/e1/VHwiPszP7lFLRGeOkLD3TFlKn7hqzzDQy1ap2T4KaAoUxDTfMkY+HpouVpSYquHfQuruMKMPwDDpf7Pkhqk88yFfdd03ReBzQcqMMhCkG82MibDuaaqMuy+5dFDP8EGnb+CYTFhy2JhgYBLmZpN4P8G6SzauO6IpPbC07vi4kmEHy5mrYCDFccijV5jIaz1zINyakFv2cbICeEozsNJIPowSKVopxo2ve0HKV4LcZc4B56h+HnegcKDPes3mqAgJ9xIwtT3yIs8CCWnkh3nygkggQ0wHDViaO72z2V3h96E8Ia9DKbhik1fUlILS5tKtcFkaN83RT9v/DiA8/aw/+Dh+R3VErjde/f+Gvycl6bDaa+pcjbgjBUDJbz83X8BBhuuC6rG22A5lOqxbeMAw0yaM0zkZwPYmLu/oIwlKJrBhm28yViAgy3XS+0WKamu6/AMJRCW54yYBcBSCORUZ8tJB2lLz0XV/MqZ2NhGJl574yCTwJvu9KYr5AgNvx2/t2otyHJ0zsLcBOxLkjk0YnkAWRAm6WZhiBA2e4PNM3PmMNngHS+yESyxApispC0qdgZauQWM4ghK0yYYVwYbnLQkcucAwD8G1Np2xBhM525ag/FgDl58sX2qV66LbATiJncTVshhsikIEjf0QwfChf9TsUXZtvx0mqpty/xaSV76fnOqJRostHZydvT5DKfYC/Q8ufOHAyP+9K2mdTytzdXh0mtBo5CETHMrHnLRVtdjlzgeTHnD4JIgcfUwCz44G7XisIaIhwM2orZC1iqSVAU0zD9Br6w2K7AIhoyMmxKc57SW70kT3KeWEHxdg4ETY8tKDBF3/bXu5q1q8RwJjbZMHxYSL9BbNjS6HmmfI6X1RGNMnt9wIUYVr+X5OgR8BrW5OU5iyGGLxln7bbWaeT0yxiqPu4ySdyAPe1q3TCU2hYzA7Zyag+2g9VydKJIiSawKfyAhFaeFpgQQ5ZRO+9jzNgaKTEcK2N2TmgdrHn4vCC50wXOFTddjmjolUq9djGX6qzrTtiwoRt2aeWjYeRJgEVGMdffUocUt10Vl4ZSydjx4wdSqoicPxSNN70MPJpnTFJVjFwQ8soxLalBJBu8OEx4xGQlbW0pMTxR1LbhbjD2bpLjrhZqRSu5Z2rb+YYFnVXd58pMVZ9LSxkE+MUUnC9vTA9jFjbGyU5ZdtFsj5UY7ss2BMjNA4Zhs8mTmPrEEBmV48d6pVKu1esXqwtd6rrDSnVWe88JUkU2RcCQkM13rSCt4b6X7snIIM9VDCqGmgB242XaYqXtLSIYNlxEg73BI9fbEaREE9zVZ11aqJyCU6FZbQ+sjoxWtBDDHf+0bwXajrqqIAZRVdGa9Bj3ZpmZdINU2odS50wSNg8SFGv1al3sXVKD1HWHDTFdLSVFKfWm44M3G5NMm9nbhE+9aCdE9/6lxnAqJ0f7wNCNJvnwcQe8tVRSiqXpJPs9UoqsrUDP0b6gY+RCvM2+xzXAgM0RRl/E+mcewz+T8RGm81aN4bFk0dDOJkZXxw4+ZDMVuQQn2ZGFTagU9fzvtxBLZJHxUaRhG0y4BJPZZIYRDA7EAcjttsU76e0/4YpND6RMuEJnM7ljenTSRMawj70YA6/LjASuX4xqH8ViqXB0PejBWg10fR6jVDFufMNBxZvi0Wn0GIP03MFkeLh2OHNSS6W0j6nBz/2ksytVq5+a12KAUSN2ZoBt0CAePM9D221kcVvgjaXoOY4IQxatlPO9wUMRuWj4QkN2axh1aNkktn1epnabmqfo0Z+7yeqcpN+imVYc221B8ZjuWoOcw7FwtvD3Rw5HROrsCOuzcUQYsmi5spSniUgY5cxg6GrYihY9iWre3yEfB3khI2hK22DdayYI3O76+ukZ4ZtiUis7TIxoG+tRBAydFw0QMO40DKRyqVMahpp5ADsNFEXOsIYw0wqg8cHjGmKwhGtHrq1AjeK4vg8Oj7Vu0VPcgo1UENQ7S3ast5986o+egGF3CnwxcGIjb1ewzb1zIsLvJb2WT02ozDW0nNgRNIND0uq7jjgWKCTn0RGw5pFvra9bQRr/MLFITDeRLruc9u/xIgpz4o39jwexuNsWYsXS8CwbR9qUc3a5yQ3ozcaGF7q9wH4tZzAarq0SWaAlP1lx6DpwKX77PslFxO6djVp8kOKBttAeDV5Jc2Unud++UKFpOttSjdxyzpcE6XJdEPJepAfBmhqdkYth3AYqMoSGiWuUDmK0TS/lm/FZNdBEZ42059YQksNg4sjFUlijkY+ENfmzs1ji43wOwwZrem5tDMF4lRVg+Fc/Fr80CWI0e6ZzkjDBhKchXNhM92I2xMlh1GzNZBbK2R0lJ5rISiduRMuItCg2pYVuAGF1/FTE0CCfHVxjI7maM4vAuuacb4McSKZrRy6T+yVXbFFuQDfIu0QhK4SYCgyyBsfvNGyDjSDeHpu8ds10hJeXJFJpiqFo4rPklGKu7ih9SV7umhOb9rlJiMVs9BSNur3kiKUCURi48JI0zQkvK6WAkyEF2kHtS/ULuVrbpcgFHALfTGxROZynhr1eiwKGdmhzhi56FIKwGd4pfbHJGe+pgBWe9529t2j2iHOZ5H3I8R63JemtBoS198YHyVeVUyhgPB2Ojk8ZDdG5C93k2BSxmfBMz6NJHzOTb1Mce844KaVOEdFVlORelPvWpZoLg7zxAhpQrd0R58VmgEGm6FWQT6wO4XTQ7nXauL5UIAqn02puMz5KKS6lZpBHDX614cOJxbMh+5AaZiOFqr7lC/wKKXJhoJhhQSQQDGPR3s1E8EWPffMf/Iup/U2MXGv9reiSHbZtqYLMQcpiZ/kb20ZlsTpwTGq28XZDKeTIBp6LHDc/9y3PC8KKJXaI4LGvxCbybAyPOuzJLEE6DciOTkc/9icCnmuN4jumJK4Zz4l8MfLA46TOEI/jueRnW5g2kNz9ublvWRU2sOaTsogF3iwHhzKYBSkUhuHHsMzCjHJRCEco/ClN5pUnGp1itzBDfMtrgZfSBv8CHt1oSKl1zN2IS4qq+TMQlGsu4idTr5kbP+C5YDTwLMCQAbJlEoiKSr/jHqGUQqQddhrWfBeNfPQvkE4GObakbAk25UiQPe9FUXNBPkSOGeq23AiSTuAdb+GRDGzRpoextxhDzFSADkoO5kGs0YPgwfHUw2Evrn8ezM02cL6EIj/lKA5Ohoehy5ELzGqGN6UZORU1/NkLUu5j+HszcCGwuE1zTqIrQn8vMSA2EwwxufEPCFA4gZ0wM8f+etnhRvkERJTGLZLsnCKoQuHUGmjNhPdqKzrpM+E8rHFCFnq7G2KA85PiUFvoKpidqHLBThQi7gPOfKN9nzcROX1hhph2VsVl2xlV0rouRy5sEICBxZ1dHxoAxqaTfx32NhFDFoo52WMrOMe4dRxqO4u84n5s1sSSptshyMXUwhIOjj6pJByLvDMJKPnCWGijLM2UIxeEvV6Eomq2vHfyb9M3xcaXBMW/AlnRxJesbARa/sjTLLMXhdo2nejMDYJKJ6y7DNkFfmQDufq+ZCC+TfQFTmEM9z6umUvBMwURpRJZEnVkUYxtH85/WyNSsJn4O3+FFiNaZXtjdg7XXAzt/BNekMiVToPRidXOBhi2hhh89vYUgq0TV2Z0u1aUpaWqChYxp6grIhe4wFbA6iz0q+qrS2GIEP9zFmIImuzDx0DYMYukF10QRzbQBA3qpf7qBw6M1QPabYCogidKFrLnhuevm+T4LLmWXzVcSpp0DLt6FFoz4lD4LBRTKwkxPP842wt/hMOSzBjDWMtScKiCLcD2L1izN0BL7lCwD8GkWWWhuTW/z0rDzFSS1nReyZaN2Pctz2KBx4QdLNJESiVwjYV/nYbf/Pk5MsvQl0ha7HdjJaR54QWr6IRigEkV4ELhFQrzsAEsURwmviJD0or3eGGjKyIXZCt0yDLaBudBeA4R6yg74WH0yCFx00EoVUwtGtSyj0UlOFMCtDDfSovfjzwwVlnIGVtqhal3mtRSZYvuvhS5MOzA+mfJh/9cGsP3gm8KPMbaa6L4mJ3Kx8WmhG9a6kIGg6xM2+ia2uQ98uuxNGQENEZD4tN0cBgnHUt3DXqaaN/rqTPT8+CoxwccbbKF4SjaDv+9mfJ3zaitaWJpHTBT35xLXLrhWFq3jazYO2aumVTtDhpDCv6l3ShV8AlbJ8HK92cbm+IvL4bVHr/MBg6H1rClNGDSo3RYyQsruMcuCxgfbydio8HYdebg270GZxgXZr6xFHaz2JRlcRWpFIbcD0OYQUqdy5hqKfijI4wGXGEpTjPi0q10SX7kDR54Qaow9cYSzPnsvAMXo9XbCjuk0BkZyGVnONJdXEXiYyiYlM2boZhrlXRSLjj1eek2Y9EosxMmb0dc3Mw7Y6t75bAwju+lMLTJ206/1e5N9vF+247J0nNyPtU0PXmdydtcpAZtg7UFmN62Um5fDA2ymy6xM+LxNUAkFJRciJ5S95AJT8AQw9hTDEPZkT+xP9ndHW0Hp3rWCd7TBhgKKFImTiWIDRuJSRtwJqgWdoFcCcZuyo41wN8NDSxvBSXCf7l6Z8okYQNYF6cqkmkr1B8Nkjwfvj+fgkPlrQSusByUUtWxRO//UkxjaYDkxoCXYj5AHmiQFSddurTs9QPdGkwQ2BfLgZms2fK6zE3Y2XM60+HRCl9S92bPoVbfB08JqK1601niSycQvbRdcu0N1tmRz5TJwJBM+j7KCYOx2950+H4aKJ/W6WzXE0lguaORj/5UOGRi5vZ6Tv90MBpuv3lxdrbz5v3AaVltb9RkR/PckRFU1yKFEXDFMQQTy3QVMfP8sOO3JygLMX68xWzTEcpPUGQtufGUmi3WdhjESZEzD4YDx/E8p9frdTr4l9M+Hu+z39nApIqmBakCBeH7wImqyvEnjKk4ij66S8CLaW/KPPrzYxDkdgOrE5mvaSrm7YQ/pEFMPPRiPm8cbo/H77e3107+l8WXQ2djo6Oop1OXyIcHUcbwLYuLKRzLS8H2tNfz/d4wOFANDK9dVFjMDG/ZaUoAWEIOm4bZRAXcysQQb5LZmpwLAgvjj89xYMYgJxd0jDAUvT15/icH247coEi7WkcKx2PM4WEWhmcem1d1nDOIn4FhoNOieS1N3lRTAxzRvjNK3FFJWR0NPE1R8266W5L/tGwvA4ZstIQ8NYjstbpgCra8obpLScaG/R3+P2j6MMK/jADIMhn3c73BCx7rz9ZWpCkDZOdg5nuqMT9Ua8lRJBYaC2momOfxX8dic9Ta3mB3NBtuwYFHeP33ycnbzysrr17u/HO2fJYviRHBS7+br08Drmp5Tnu6O9p6//f5yv7OzssPJ+9HU88DMaycCtbyJW5r2st2gqGsD8mq77Zwtr9ltVqtfr/fdtsInue5rueCGEeAn7n+6XTKBq/tAnz6NBrNZkPckfF4G2E8DGA0Ai2IfCGlHoICHf5n7Iti0Y7ndFwH/rSCCtVuRLSosIf9157uiFGM5eYyTkyJQsOqIFRzPBt9muweHx8PBtPp6amP6AFWHacH/wcd5Tg9/FcHvpwI4DdeCPGPXIS222/3WymwYsBvgx9QNmGQUisF8A+Tds3gygTgbm34wq2Glcj+axQXi/x8RaT0Amut+c8/L/b3/1zZ3Nz8/Pbt2xOEv//++/Xr19shjGPYYoCEnIUwimAymXz6tJuCQcwOEXwCmIz22OX4WbjNFmMR5BE4NW83ZSGKQqZpI4ZR7FtRkx9x6yLgcsf1KsAvlNWGB5G/eEiP2J+2UMBw+PLVLPirQRK6vRWVLeigL65tCU1gmOVmcRjaTMYEz3uSxPZVsmZRDyTNAvFDRU+WmZFhp5hUV6nEBQFi15S19/XBMttVIrZ8lcXh1QsCPIL437XcXAF2kD8JmUZ45c/jqzr0cx/Ixs0VJ2eWCZoyIc8INW66PGzuywHZpXkNO5cJgBs8M3ie8B56XV2I8YWPC9RuUWDzGT7FnKVSXZGe+ZIHklCqFQQsSRtj+EBVraCX7i4Qx+YyE2yFAZoViV56kDFPolq68/jWojirWaSiR1iOKfjwTil7fmcJobpUv/Po0d27Dx48+P77J0+fPXv8+IcffvrpOwY//vj7rYcPf7l///m9Io9ZDgg39Me7JVUHOyd1dISqXsUvgJICqjHoAbDXhdbvADzCzWHbw3YogCdPnjyFrXqGu4X7BRsW7hhsGWza77dS8JDBb7/dBvgF4P7z58/v3Vuebx017z2/fevXJ3d1wG9B44f0ZDdEqCpBtVNzoCruYvTgsgJwPfiEa38jzeJB13n0lDsa/vqbQ+4GbuAGbuAGbuAGbqBgyNsl/pU88PIf1is16f2B1/lAvfZFL5TXL70/Or7MOns2XI4HXvYjlVpZr118WdYDL72nsKV6uXZVIuYcjpcGcJf0L3u/xWUxrJdrtSvT8AoYLlUquecnLAbwreRXZ5orPA82tFAEl6S3IV/7A2/c3Ru4gW8I/g9BHAaFDqFLYgAAAABJRU5ErkJggg==" alt="">
-        <h1 style="text-align: center;">Volte mais tarde!</h1>
+        <h1 style="text-align: center;">Caminhos Euler</h1>
+        <p>
+            Os caminhos de Euler se tratam de seguimentos de arestas que não se repetem,
+            porem, os vertices podem ser repetidos, e segundo (BRITO, 2014) um Grafo Euler
+            com um único vértice e também um caminho. Para melhor compreensão atente-se na
+            figura 3.1.
+        </p>
+        <br>
+
+        <img id="ex1" src="../images/ex1.png" alt="" srcset="" width="100%">
+        <br>
+        <label itemid="ex1">
+            Figura 3.1.
+            Fonte: Autor.
+        </label>
+
+        <br><br>
+        <p>
+            Note que esse caminho Euler e um dos mais comuns que existem, muitas
+            crianças quando querem aprender a desenhar uma estrela, fazem desse modo,
+            onde o caminho feito e {v2, v5, v1, v4, v2}. Note que o vértice v2 se repetiu
+            e que o grafo tem vértice de grau par, portanto e um caminho euleriano valido,
+            pelo fato dele terminar com o mesmo vértice e chamado de <i>"ciclo"</i> ou então
+            de <i>"caminho fechado".</i>
+        </p>
+        <br>
+
+        <img id="ex1" src="../images/caminho2.png" alt="" srcset="" width="100%">
+        <br>
+        <label itemid="ex1">
+            Figura 3.2.
+            Fonte: Autor.
+        </label>
+
+        <br><br>
+        <p>
+            Para que um grafo seja nulo, deve-se possuir apenas um vértice (BRITO, 2014), como
+            demonstramos na figura 3.2. Já um grafo pode-se dizer completo quando todos seus
+            vertices são adjacentes, como os da figura 3.3, ou seja, possuem conexão com todos
+            os outros vértices.
+        </p>
+        <br>
+
+        <img id="ex1" src="../images/ex2.png" alt="" srcset="" width="100%">
+        <br>
+        <label itemid="ex1">
+            Figura 3.3.
+            Fonte: Autor.
+        </label>
+
+        <br><br>
+        <p>
+            Um caminho Euler pode ser utilizado para fazer-se mapeamentos isomórficos (OLIVEIRA).
+            Mostramos isto na figura 3.4 onde o caminho feito é {v1, v4, v3, v2, v5} como podemos
+            ver segundo as setas. Nota-se que apesar de existir uma adjacência entre os vértices
+            v1, v5 e v3, eles não realizam um caminho diretamente. E como v1 e v2 não são adjacentes
+            não é possível criar um caminho entre eles. 
+        </p>
+        <br>
+
+        <img id="ex1" src="../images/caminho1.png" alt="" srcset="" width="100%">
+        <br>
+        <label itemid="ex1">
+            Figura 3.4.
+            Fonte: Autor.
+        </label>
+
+        <br><br>
+        <p>
+            <h3>» Teorema para cortar caminho entre vértices</h3>
+            Considerando M um grafo em que a matriz de adjacência K utiliza os vértices em ordem do tipo:
+            v1, v2... vn. A quantia de caminhos possíveis N de <i>vi</i> para <i>vj</i>, em que N é um
+            inteiro positivo, é igual a k(i, j) entrada da matriz k^n (OLIVEIRA). No exemplo da figura 3.5
+            nós iremos ver as possibilidades para ir do vértice V1 ao V3.
+        </p>
+        <br>
+
+        <img id="ex1" src="../images/caminho3.png" alt="" srcset="" width="100%">
+        <br>
+        <label itemid="ex1">
+            Figura 3.5.
+            Fonte: Autor.
+        </label>
+
+        <br><br>
+        <p>
+            A matriz ficaria assim:
+        </p>
+        <br>
+
+        <img id="ex1" src="../images/matriz.jpeg" alt="" srcset="" width="auto">
+        <br>
+        <label itemid="ex1">
+            Figura 3.6.
+            Fonte: (OLIVEIRA).
+        </label>
+
+        <br><br>
+        <p>
+            <h3>» Circuito Euleriano</h3>
+            Para ser feito um circuito euleriano, deve-se primeiramente montar um grafo euleriano, fazendo as
+            conexões de forma que visite <b>todos</b> os <i><b>vértices</b></i>, de forma que ao final,
+            retorne ao primeiro vértice utilizado. Portanto vale relembrar que para ter-se um grafo euleriano
+            é necessário que os vértices sejam de grau par. 
+        </p>
+
+        <br>
+        <p>
+            Então, um caminho nulo pode ser também um circuito, pois veja na figura 3.7.
+        </p>
+        <br>
+
+        <img id="ex1" src="../images/circuito.png" alt="" srcset="" width="auto">
+        <br>
+        <label itemid="ex1">
+            Figura 3.7.
+            Fonte: Autor.
+        </label>
+
+        <br><br>
+        <p>
+            Note que se como possuímos um vértice de grau par, podemos partir do v1 em direção da a1, fazendo o
+            retorno e indo diretamente para a2 de forma direta, seguindo um <i>caminho</i> de forma <i>cíclica.</i>
+        </p>
+
+        <br>
+        <p>
+            Portanto, retornando o problema da cidade de Königsberg, o caminho feito seria o da imagem 3.8, e como
+            não há um vértice de grau par acaba não sendo um grafo euleriano, então não é também um circuito euleriano,
+            o que torna o problema sem solução.
+        </p>
+        <br>
+        
+        <img id="ex1" src="../images/noeuler.jpeg" alt="" srcset="" width="auto">
+        <br>
+        <label itemid="ex1">
+            Figura 3.8.
+            Fonte: (OLIVEIRA).
+        </label>
+
+        <br><br>
+
+        <p>
+            A única condição de um multigrafo conectado possuir um caminho euleriano porém não ser circuito, é somente
+            se possuir exatamente 2 vértices de grau impar, como mostra a figura 3.9.
+        </p>
+        <br>
+        
+        <img id="ex1" src="../images/nocircuito.jpeg" alt="" srcset="" width="auto">
+        <br>
+        <label itemid="ex1">
+            Figura 3.9.
+            Fonte: (OLIVEIRA).
+        </label>
+
     </div>
 </body>
 </html>
